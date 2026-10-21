@@ -1,8 +1,8 @@
-# 📊 Power BI · Modelamiento de Datos y DAX para KPIs de RRHH
+﻿# 📊 Power BI · Modelamiento de Datos y DAX para KPIs de RRHH
 
 Guía técnica del tablero `Reporte_DAX.pbix`: cómo se modeló la data, qué fórmulas DAX alimentan cada KPI y cómo se ve el resultado en el reporte.
 
-> Documentación general del proyecto: [README.md](README.md)
+> Documentación general del proyecto: [README_Proyecto.md](README_Proyecto.md)
 
 ---
 
