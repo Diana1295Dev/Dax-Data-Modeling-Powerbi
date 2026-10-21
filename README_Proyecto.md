@@ -40,11 +40,31 @@ Otros visuales: segmentación por **Año** (2019 / 2020), línea *Ingreso y Gast
 
 ## 1.2 Power Query
 
-Siete consultas: `Calendario`, `Calendario2020`, `Categorias`, `Gastos`, `Ingresos`, `Presupuesto Gastos` y `Meta Ingresos`.
+Siete consultas, cada una con sus pasos aplicados:
 
-La tabla **Calendario** (731 filas, de 2019 a 2020) se construye así: **Origen → Navegación → Encabezados promovidos → Tipo cambiado → Consulta anexada → Columnas con nombre cambiado → Inicio del mes insertado → Año insertado**. Se anexa `Calendario2020` a la de 2019 y se agregan las columnas `Inicio del mes` y `Año` (`Date.Year([Fecha])`). `Calendario2020` queda oculta en el modelo porque solo sirve para el anexo.
+| Consulta | Filas | Pasos clave |
+|---|---|---|
+| `Calendario` | 731 | Consulta anexada con `Calendario2020`; se agregan `Inicio del mes` y `Año` (`Date.Year([Fecha])`) |
+| `Calendario2020` | — | Segunda mitad del calendario; queda oculta en el modelo porque solo sirve para el anexo |
+| `Categorias` | 10 | Encabezados promovidos y tipos de texto; `Cat-Otros` agrupa todas las categorías como «Otros» excepto «Online» |
+| `Gastos` | 216 | Filas superiores quitadas, encabezados promovidos, columna sobrante quitada y `Cantidad` renombrada a `Gastos` |
+| `Ingresos` | 48 | Mismo patrón: `Cantidad` renombrada a `Ingresos` |
+| `Presupuesto Gastos` | 216 | Anulación de dinamización de columnas, columna personalizada, reordenar columnas y `FECHA` renombrada a `Fecha` |
+| `Meta Ingresos` | 24 | Columna personalizada, reordenar y quitar columnas, `Fecha` como tipo fecha |
+
+**Calendario** (731 filas, de 2019 a 2020): Origen → Navegación → Encabezados promovidos → Tipo cambiado → Consulta anexada → Columnas con nombre cambiado → Inicio del mes insertado → Año insertado.
 
 ![Power Query · Calendario](images/08d_Finanzas_PowerQuery_Calendario.png)
+
+| Categorias | Gastos |
+|---|---|
+| ![PQ Categorias](images/08e_Finanzas_PQ_Categorias.png) | ![PQ Gastos](images/08f_Finanzas_PQ_Gastos.png) |
+
+| Ingresos | Presupuesto Gastos |
+|---|---|
+| ![PQ Ingresos](images/08g_Finanzas_PQ_Ingresos.png) | ![PQ Presupuesto](images/08h_Finanzas_PQ_Presupuesto.png) |
+
+![Power Query · Meta Ingresos](images/08i_Finanzas_PQ_Meta.png)
 
 ## 1.3 Modelo de datos
 
