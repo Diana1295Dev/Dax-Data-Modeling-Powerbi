@@ -1,4 +1,4 @@
-﻿# 📊 Power BI · Modelamiento de Datos y DAX para KPIs de RRHH
+# 📊 Power BI · Modelamiento de Datos y DAX para KPIs de RRHH
 
 Guía técnica del tablero `Reporte_DAX.pbix`: cómo se modeló la data, qué fórmulas DAX alimentan cada KPI y cómo se ve el resultado en el reporte.
 
@@ -33,7 +33,7 @@ Guía técnica del tablero `Reporte_DAX.pbix`: cómo se modeló la data, qué f�
 
 📸 **Captura del flujo**
 
-![Flujo de trabajo](images/01_flujo.png)
+![Flujo de trabajo](images/01_Flujo.svg)
 
 ---
 
@@ -54,7 +54,7 @@ Guía técnica del tablero `Reporte_DAX.pbix`: cómo se modeló la data, qué f�
 
 📸 **Captura de Power Query**
 
-![Power Query](images/02_power_query.png)
+![Power Query](images/02_PowerQuery.svg)
 
 ### 2.3 Relaciones
 
@@ -67,7 +67,7 @@ Guía técnica del tablero `Reporte_DAX.pbix`: cómo se modeló la data, qué f�
 
 📸 **Captura de la vista de modelo**
 
-![Modelo de datos](images/03_modelo.png)
+![Modelo de datos](images/03_Modelo.svg)
 
 ---
 
@@ -152,7 +152,7 @@ SWITCH (
 
 📸 **Captura de las medidas DAX**
 
-![Medidas DAX](images/04_medidas_dax.png)
+![Medidas DAX](images/04_DAX.svg)
 
 ---
 
@@ -164,19 +164,19 @@ Las tres páginas comparten el mismo diseño: menú de navegación con botones, 
 KPIs: `Total_empleados`, `Evaluacion_promedio`, `Sueldo_promedio`, `Edad`.
 Visuales: colaboradores por departamento, por estado (mapa), por género (dona), por rango de edad, de sueldo y de evaluación, y tabla de detalle.
 
-![Total Colaboradores](images/05_total_colaboradores.png)
+![Total Colaboradores](images/05_Colaboradores.svg)
 
 ### 4.2 Análisis de Sueldos
 KPIs: `Total_empleados`, `Sueldo`, `Sueldo_promedio`.
 Visuales: sueldo por departamento, por estado (mapa), por género (dona), dispersión Edad vs Sueldo y tabla de detalle.
 
-![Análisis de Sueldos](images/06_analisis_sueldos.png)
+![Análisis de Sueldos](images/06_Sueldos.svg)
 
 ### 4.3 Análisis de Evaluación
 KPIs: `Total_empleados`, `Evaluacion_promedio`, `Evaluación`.
 Visuales: evaluación por departamento, por jefe, por género, mapa por estado y tabla de detalle.
 
-![Análisis de Evaluación](images/07_analisis_evaluacion.png)
+![Análisis de Evaluación](images/07_Evaluacion.svg)
 
 ---
 
