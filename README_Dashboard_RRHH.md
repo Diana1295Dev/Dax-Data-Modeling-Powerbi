@@ -15,7 +15,7 @@
 
 📘 *Guía técnica de `Reporte_DAX.pbix`. Las capturas son reales, tomadas de Power BI Desktop.*
 
-[← Volver al README del proyecto](README_Proyecto.md)
+[← Volver al README del proyecto](README_Dashboard_Financiero.md)
 
 </div>
 

@@ -39,7 +39,7 @@
 | 💰 `Modelamiento_y_DAX.pbix` | **Reporte financiero**: ingresos, gastos, utilidad, metas y presupuesto |
 | 👥 `Reporte_DAX.pbix` | Reporte de RRHH: colaboradores, sueldos y evaluación |
 | 📗 `Datos Empleados.xlsx` | Fuente de datos del reporte de RRHH |
-| 📘 [README_Modelamiento.md](README_Modelamiento.md) | Detalle técnico del reporte de RRHH |
+| 📘 [README_Dashboard_RRHH.md](README_Dashboard_RRHH.md) | Detalle técnico del reporte de RRHH |
 | 🖼️ `images/` | Capturas reales de Power BI |
 
 ---
