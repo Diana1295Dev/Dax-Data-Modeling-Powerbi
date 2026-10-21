@@ -1,6 +1,6 @@
 # 📈 Proyecto Power BI · Modelamiento de Datos y DAX
 
-Repositorio con **dos reportes de Power BI** construidos con el mismo flujo: **fuente de datos → Power Query → modelo relacional → medidas DAX → tablero de KPIs**. Todas las capturas son reales, tomadas de Power BI Desktop.
+Reporte de Power BI construido con el flujo: **fuente de datos → Power Query → modelo relacional → medidas DAX → tablero de KPIs**. Todas las capturas son reales, tomadas de Power BI Desktop.
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-F2C811?logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/Lenguaje-DAX-0078D4)
@@ -10,8 +10,8 @@ Repositorio con **dos reportes de Power BI** construidos con el mismo flujo: **f
 
 | Archivo | Descripción |
 |---|---|
-| `Modelamiento_y_DAX.pbix` | **Reporte financiero**: ingresos, gastos, utilidad, metas y presupuesto (sección 1) |
-| `Reporte_DAX.pbix` | **Reporte de RRHH**: colaboradores, sueldos y evaluación (sección 2) |
+| `Modelamiento_y_DAX.pbix` | **Reporte financiero**: ingresos, gastos, utilidad, metas y presupuesto |
+| `Reporte_DAX.pbix` | **Reporte de RRHH**: colaboradores, sueldos y evaluación |
 | `Datos Empleados.xlsx` | Fuente de datos del reporte de RRHH |
 | [README_Modelamiento.md](README_Modelamiento.md) | Detalle técnico del reporte de RRHH: Power Query, modelo y DAX |
 | `images/` | Capturas de Power BI |
@@ -164,31 +164,10 @@ Online2020   = CALCULATE ( [Ingreso], Ingresos[Categoria] = "Online", Calendario
 
 ---
 
-# 2. 👥 Reporte de RRHH · `Reporte_DAX.pbix`
-
-Análisis de **194 colaboradores** desde `Datos Empleados.xlsx` (hojas Empleados, Evaluación y Sueldo, relacionadas por `ID Empleado`), en 3 páginas: **Total Colaboradores**, **Análisis de Sueldos** y **Análisis de Evaluación**.
-
-![Tablero RRHH](images/05_Colaboradores.png)
-
-| KPI | Valor | Medida DAX |
-|---|---|---|
-| Total de empleados | 194 | `Total_empleados = COUNTROWS('Tabla Empleados')` |
-| Evaluación promedio | 7,56 | `Evaluacion_promedio = AVERAGE('Tabla Evaluacion'[Evaluación])` |
-| Sueldo promedio | 74,72 mil | `Sueldo_promedio = AVERAGE('Tabla Sueldo'[Sueldo])` |
-| Promedio de edad | 45,72 | `Edad = INT(YEARFRAC([Nacimiento], TODAY()))` |
-
-Además usa tres columnas calculadas con `IF` anidados (`Grupo edad`, `Grupo_evaluacion`, `Grupo_sueldo`) para segmentar en rangos.
-
-![Modelo RRHH](images/03_Modelo.png)
-
-📘 **Power Query, relaciones, fórmulas y las 3 páginas con capturas:** [README_Modelamiento.md](README_Modelamiento.md)
-
----
-
 ## Cómo usar el proyecto
 1. Clona el repositorio.
 2. Abre el `.pbix` que quieras con **Power BI Desktop**.
-3. Si pide la ruta de origen: *Transformar datos → Configuración del origen de datos* y apunta a tu archivo de datos (en RRHH, `Datos Empleados.xlsx`).
+3. Si pide la ruta de origen: *Transformar datos → Configuración del origen de datos* y apunta a tu archivo de datos .
 
 **Herramientas:** Power BI Desktop · Power Query · DAX · Excel
 **Autora:** [@Diana1295Dev](https://github.com/Diana1295Dev)
